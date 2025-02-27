@@ -20,7 +20,7 @@ public class EzemploJTextField extends JFrame {
         Container tela = getContentPane();
         setLayout(null);
         rotulo1 = new JLabel("Nome");
-        rotulo2 = new JLabel("idade");
+        rotulo2 = new JLabel("Idade");
         rotulo3 = new JLabel("Telefone");
         rotulo4 = new JLabel("Celular");
         
@@ -31,14 +31,27 @@ public class EzemploJTextField extends JFrame {
         
         rotulo1.setBounds(50,20,80,20);
         rotulo2.setBounds(50,60,80,20);
-        rotulo3.setBounds(50,100,80,20);
-        rotulo4.setBounds(50,140,80,20);
+        rotulo3.setBounds(50,100,200,20);
+        rotulo4.setBounds(50,140,150,20);
         
         texto1.setBounds(110,20,200,20);
         texto2.setBounds(110,60,200,20);
-        texto3.setBounds(110,100,200,20);
-        texto4.setBounds(110,140,200,20);
+        texto3.setBounds(140,100,200,20);
+        texto4.setBounds(130,140,200,20);
         
+        rotulo1.setFont(new Font("Arial",Font.BOLD,14));
+        rotulo2.setFont(new Font("Comic Sans MS",Font.BOLD,16));
+        rotulo3.setFont(new Font("Courier New",Font.BOLD,18));
+        rotulo4.setFont(new Font("Times New Roman",Font.BOLD,20));
+
+        
+        rotulo1.setForeground(Color.red);
+        rotulo2.setForeground(Color.black);
+        rotulo3.setForeground(Color.yellow);
+        rotulo4.setForeground(Color.green);
+        
+        tela.setBackground(Color.blue);
+
         tela.add(rotulo1);
         tela.add(rotulo2);
         tela.add(rotulo3);
@@ -49,6 +62,7 @@ public class EzemploJTextField extends JFrame {
         tela.add(texto3);
         tela.add(texto4);
         
+        setResizable(false);
         setSize(400, 250);
         setVisible(true);
         setLocationRelativeTo(null);
